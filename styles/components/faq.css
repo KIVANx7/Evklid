@@ -1,0 +1,112 @@
+.faq {
+    margin-top: 110px;
+}
+
+.faq__list {
+    margin-top: 34px;
+    margin-bottom: 100px;
+}
+
+.faq__list__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    border-top: 0.5px solid var(--gray);
+    border-bottom: 0.5px solid var(--gray);
+    align-items: center;
+}
+
+.faq__list__item:nth-child(2), .faq__list__item:nth-child(4) {
+    padding: 30px, 0;
+}
+
+.faq__link {
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+}
+
+.faq__list__item__disc {
+    padding-bottom: 40px;
+}
+
+
+
+/* p-color */
+
+.faq__list__item p {
+    transition: all .4s ease;
+}
+
+.faq__list__item:hover p {
+    color: var(--orange);
+}
+
+.faq__list__item:focus p {
+    color: var(--black);
+}
+
+.faq__list__item:active p {
+    color: var(--orange);
+}
+
+/* BORDER */
+
+
+.faq__list__item {
+    transition: all .4s ease;
+}
+
+.faq__list__item:hover {
+    border-color: var(--orange);
+}
+
+
+.faq__list__item:focus {
+    border-color: var(--gray);
+}
+
+.faq__list__item:active {
+    border-color: var(--orange);
+}
+
+
+
+/* SVG */
+
+.faq__list__item:hover .faq__link {
+    background-color: var(--orange);
+}
+
+.faq__list__item:focus .faq__link {
+    background-color: var(--gray);
+
+}
+
+.faq__list__item:active .faq__link {
+    background-color: var(--orange);
+}   
+
+
+
+
+.ui-state-active {
+    border-bottom: none;
+}
+
+.ui-state-active > .faq__link svg {
+    transform: rotate(45deg);
+}
+
+.faq__link svg {
+    transition: transform .3s ease-in-out;
+}
