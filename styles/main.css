@@ -1,0 +1,113 @@
+/* main */
+@import 'normalize.css';
+@import 'variables.css';
+@import 'fonts.css';
+
+
+/* components */
+@import 'components/header.css';
+@import 'components/hero.css';
+@import 'components/about.css';
+@import 'components/how.css';
+@import 'components/faq.css';
+@import 'components/footer.css';
+
+/* media */
+
+
+@import 'components/media.css';
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* other */
+body {
+    min-width: 320px;
+    font-family: 'Montserrat';
+    background-color: var(--white);
+}
+
+.container {
+    margin: auto;
+    padding: 0 75px;
+    max-width: 1770px;
+}
+
+.section-offset {
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 59px;
+}
+
+.btn-default {
+    border-radius: 16px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: all .4s ease;
+}
+
+.btn-default:hover {
+    background-color: var(--orange-hover);
+}
+
+.btn-default:focus {
+    background-color: var(--orange-hover);
+}
+
+.btn-default:active {
+    background-color: var(--orange-active);
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0 50px;
+    }
+
+    .section-offset {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .btn-default {
+        border-radius: 8px;
+    }
+
+    .section-offset {
+        margin-top: 30px;
+    }
+
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+
+
+
+
