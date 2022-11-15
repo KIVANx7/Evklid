@@ -1,0 +1,162 @@
+.header {
+    padding: 14px 0;
+    background-color: var(--white);
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu__list {
+    display: flex;
+}
+
+.header__menu__list-item:not(:first-child) {
+    margin-left: 85px;
+}
+
+.header__menu__list-item {
+    transition: all .4s ease;
+}
+
+.header__menu__list-item a:hover {
+    border-bottom: 2px solid var(--orange);
+}
+
+.header__menu__list-item a:focus {
+    outline: 2px solid var(--orange);
+}
+
+.header__menu__list-item a:active {
+    outline: none;
+    color: var(--orange-active);
+    border-bottom: 2px solid var(--orange-active);
+}
+
+.header__menu__list-item--link {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+/* SEARCH BUTTON */
+
+.header-search__container {
+    position: absolute;
+    top: 5px;
+    right: -50px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 494px;
+    width: 100%;
+    background: var(--white);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+    padding: 18px 13px 18px 32px;
+    align-items: center;
+    overflow-y: auto;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.header-search__container--active {
+    visibility: visible;
+    transform: none;
+}
+
+.header-search__form {
+    max-width: 400px;
+    width: 100%;
+}
+
+.header-search__input {
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    width: 100%;
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+.header-search__close {
+    cursor: pointer;
+}
+
+.header__menu-button {
+    display: flex;
+    margin-left: 260px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+
+/* HOVER/FOCUS/ACTIVE */
+
+.header__menu-button svg {
+    fill: none;
+    stroke: var(--black);
+    transition: all .4s ease;
+}
+
+.header__menu-button:hover svg {
+    stroke: var(--orange);
+}
+
+.header__menu-button:focus svg {
+    stroke: var(--black);
+    outline: 2px solid var(--orange);
+    outline-offset: 2px;
+}
+
+.header__menu-button:active svg {
+    outline: none;
+    stroke: var(--orange);
+}
+
+
+
+
+.heaeder__menu-button-search {
+    fill: var(--black);
+}
+
+.heaeder__menu-button-search:hover {
+    fill: var(--orange);
+}
+
+.heaeder__menu-button-search:focus {
+    fill: var(--black);
+}
+
+.heaeder__menu-button-search:active {
+    fill: var(--orange);
+}
+
+
+
+.header__menu-button--active:focus svg > .heaeder__menu-button-search {
+    fill: var(--black);
+    stroke: var(--black);
+}
+
+.header__menu-button--active svg {
+    outline: none;
+    stroke: var(--orange);
+}
+
+.header__menu-button--active svg > .heaeder__menu-button-search {
+    fill: var(--orange);
+    stroke: var(--orange);
+}
