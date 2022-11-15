@@ -1,0 +1,138 @@
+.how-work {
+    margin-top: 95px;
+}
+
+.how-work__steps {
+    display: flex;
+    margin-top: 50px;
+}
+
+.how-work__steps-item__btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+/* .how-work__steps-item__btn--active {
+
+} */
+
+.how-work__container {
+    display: none;
+}
+
+.how-work__container--active {
+    display: flex;
+    margin-top: 45px;
+}
+
+.how-work__steps-item__btn--active {
+    outline: none;
+    color: var(--orange-active);
+}
+
+.how-work__steps-item:not(:last-child) {
+    margin-right: 86px;
+}
+
+.how-work__steps-item__btn:hover {
+    color: var(--orange);
+}
+
+.how-work__steps-item__btn:focus {
+    outline: 2px solid var(--orange);
+    color: var(--black);
+}
+
+.how-work__steps-item__btn:active {
+    outline: none;
+    color: var(--orange-active);
+}
+
+.how-work__left {
+    margin-right: 50px;
+}
+
+.how-work__left-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.how-work__left-description {
+    max-width: 758px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.how-work__left-desk-first {
+    margin-top: 9px;
+}
+
+.how-work__left__buttons {
+    display: flex;
+    margin-top: 50px;
+}
+
+.how-work__left__buttons-item {
+    cursor: pointer;
+    padding: 20px 38px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 16px;
+    transition: all .4s ease;
+}
+
+.how-work__left__buttons-item:nth-child(1) {
+    margin-right: 33px;
+}
+
+.how-work__left__buttons-item:hover {
+    border-color: transparent;
+    color: var(--white);
+    background-color: var(--dark-light);
+}
+
+.how-work__left__buttons-item:focus {
+    border-color: transparent;
+    color: var(--white);
+    background-color: var(--dark-light);
+}
+
+.how-work__left__buttons-item:active {
+    background-color: var(--black);
+}
+
+.how-work__right {
+    margin-left: auto;
+    max-width: 870px;
+    width: 100%;
+    border-radius: 32px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.how-work__right-image-1 {
+    background-image: url(../../img/how__1.jpeg);
+}
+
+.how-work__right-image-2 {
+    background-image: url(../../img/how__2.jpeg);
+}
+
+.how-work__right-image-3 {
+    background-image: url(../../img/how__3.jpeg);
+}
+
+.how-work__right-image-4 {
+    background-image: url(../../img/how__4.jpeg);
+}
+
